@@ -7,7 +7,7 @@
 - dockerをsudoなしで実行可能にする
   - https://qiita.com/DQNEO/items/da5df074c48b012152ee
 - latexのビルド環境がインストールされているイメージをpull
-  - docker pull ghcr.io/being24/latex-docker:latest
+  - `docker pull ghcr.io/being24/latex-docker:latest`
 - このリポジトリをclone
 - `main.tex`を各々の原稿に取り替えてビルドする
   - `sample.bib`が動作確認用に用意されているのでbibtexを利用する場合は`addbibresource`を自分のbibファイルに修正する
