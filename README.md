@@ -1,5 +1,16 @@
-# latex-template-ja
-日本語latex用のテンプレート。VScodeの推奨拡張機能などが含まれる
+# latex-template-en
+英語用latex用のテンプレート。VScodeの推奨拡張機能やビルド設定（latexmk）などが含まれる。
+
+# usage
+- dockerのインストール
+  - `https://docs.docker.com/engine/install/#server`
+- dockerをsudoなしで実行可能にする
+  - `https://qiita.com/DQNEO/items/da5df074c48b012152ee`
+- latexのビルド環境がインストールされているイメージをpull
+  - `docker pull ghcr.io/being24/latex-docker:latest`
+- このリポジトリをclone
+- `main.tex`を各々の原稿に取り替えてビルドする
+  - `sample.bib`が動作確認用に用意されているのでbibtexを利用する場合は`addbibresource`を自分のbibファイルに修正する
 
 # 参考
 以下の記事からCI/CD機能とlinter機能をomitしたもの
