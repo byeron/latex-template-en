@@ -8,7 +8,8 @@
                 "--rm",
                 "-v",
                 "%DIR%:/workdir",
-                "ghcr.io/being24/latex-docker",
+                //"ghcr.io/being24/latex-docker",
+                "byeron/latex-env",
                 "latexmk",
                 "/workdir/%DOCFILE_EXT%"
             ]
@@ -21,7 +22,8 @@
                 "--rm",
                 "-v",
                 "%DIR%:/workdir",
-                "ghcr.io/being24/latex-docker",
+                //"ghcr.io/being24/latex-docker",
+                "byeron/latex-env",
                 "sh",
                 "/workdir/bin/diff.sh"
             ]
@@ -84,7 +86,8 @@
         "--rm",
         "-v",
         "%DIR%:/workdir",
-        "ghcr.io/being24/latex-docker",
+        //"ghcr.io/being24/latex-docker",
+        "byeron/latex-env",
         "sh",
         "/workdir/bin/linter.sh",
     ],
